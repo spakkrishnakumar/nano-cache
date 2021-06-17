@@ -1,0 +1,5 @@
+GET   /                       controllers.HomeController.index()
+
+# Cache
+POST  /profile/:id/:value     controllers.HomeController.set(id: String, value: String)
+GET   /profile/:id            controllers.HomeController.get(id: String)
